@@ -55,7 +55,6 @@ nav#menu ul a {
 
 nav#menu ul a:hover {
 	color: #A97359;
-	text-decoration: underline;
 }
 
 nav#menu ul ul {
@@ -70,7 +69,6 @@ nav#menu ul ul a {
 
 nav#menu ul ul a:hover {
 	color: #A97359;
-	text-decoration: underline;
 }
 
 
