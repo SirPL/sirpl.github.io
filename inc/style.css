@@ -1,0 +1,116 @@
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text:600italic,600,400,400italic);
+
+html, body {
+	height: 100%;
+	margin: 0px;
+	font-family: "Crimson Text", "Urw Chancery L", "Apple Chancery", "ZapfChan Dm BT", "Monotype Corsiva", "Century Schoolbook L", "Palatino Linotype", "Georgia", "Times New Roman", "serif";
+
+}
+
+html {
+	min-width: 780px;
+}
+
+body {
+	background-image: url("../img/_body/background.png");
+	background-repeat: repeat;
+}
+
+body header {
+	height: 90px;
+	width: 100%;
+	background-image: url("../img/_header/background.png");
+	background-repeat: repeat-x;
+	border-bottom: 2px solid #A97359;
+}
+
+#lLogo {
+	
+}
+
+#rLogo {
+	float: right;
+}
+
+nav#menu {
+	width: 220px;
+	height: -moz-calc(100% - 92px);
+	height: -webkit-calc(100% - 92px);
+	height: calc(100% - 92px);
+	border-right: 2px solid #A97359;
+	float: left;
+}
+
+nav#menu ul {
+	color: #B22250;
+	list-style-type: none;
+	padding-left: 15px;
+	font-size: 16pt;	
+}
+
+nav#menu ul a {
+	color: #B22250;
+	text-decoration: none;
+}
+
+nav#menu ul a:hover {
+	color: #A97359;
+	text-decoration: underline;
+}
+
+nav#menu ul ul {
+	color: #000000;
+	font-size: 14pt;	
+}
+
+nav#menu ul ul a {
+	color: #000000;
+	text-decoration: none;
+}
+
+nav#menu ul ul a:hover {
+	color: #A97359;
+	text-decoration: underline;
+}
+
+
+section#main {
+	float: right;
+	min-height: 100px;
+	width: -moz-calc(100% - 282px);
+	width: -webkit-calc(100% - 282px);
+	width: calc(100% - 282px);
+	padding: 30px;
+	font-size: 13.5pt;
+}
+
+section#main p {
+	padding: 0;
+}
+
+figure {
+	text-align: center;
+}
+
+section#main a {
+	color: #B22250;
+	text-decoration: none;
+}
+
+section#main a:hover {
+	text-decoration: underline;
+}
+
+section#main ul li {
+	list-style-image: url("../img/_body/bullet.png");
+}
+
+h1, h2, h3, h4, h5 {
+	color: #B22250;
+}
+
+h1 {
+	font-size: 28pt;
+	margin: 0px;
+	font-variant: normal;
+}
