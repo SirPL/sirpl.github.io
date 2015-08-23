@@ -79,6 +79,7 @@ section#main {
 	width: -webkit-calc(100% - 282px);
 	width: calc(100% - 282px);
 	padding: 30px;
+	padding-left: 0;
 	font-size: 13.5pt;
 }
 
