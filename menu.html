@@ -1,65 +1,58 @@
 <ul>
-	<li><a href="index.html" id="menu_gregorio">Gregorio</a></li>
-	<script type="text/javascript">
-		$(document).ready(function() {	
-			if(typeof gregorio != 'undefined')
-			{
-			$("#menu_gregorio").append('<li><ul>\
-					<li><a href="?p=download">Download@github</a></li>\
-					<li><a href="?p=installation">Installation</a></li>\
-					<li><a href="?p=using_gregorio">Using Gregorio</a></li>\
-					<li><ul>\
-						<li><a href="?p=edit_editor">In an editor</a></li>\
-						<li><a href="?p=edit_line">At the command line</a></li>\
-						<li><a href="?p=edit_web">Through the web</a></li>\
-						<li><a href="?p=edit_scribus">In Scribus</a></li>\
-					</ul></li>\
-					<li><a href="?p=tutorial">Tutorial</a></li>\
-					<li><a href="?p=history">History</a></li>\
-					<li><a href="?p=legal">Legal issues</a></li>\
-				</ul></li>');
-			}
-		});
-	</script>
+	<li><a href="index.html" >Gregorio</a></li>
+	<li><ul id="submenu_gregorio">
+		<li><a href="?p=download">Download@github</a></li>
+		<li><a href="?p=installation">Installation</a></li>
+		<li><a href="?p=using_gregorio">Using Gregorio</a></li>
+		<li><ul>
+			<li><a href="?p=edit_editor">In an editor</a></li>
+			<li><a href="?p=edit_line">At the command line</a></li>
+			<li><a href="?p=edit_web">Through the web</a></li>
+			<li><a href="?p=edit_scribus">In Scribus</a></li>
+		</ul></li>
+		<li><a href="?p=tutorial">Tutorial</a></li>
+		<li><a href="?p=history">History</a></li>
+		<li><a href="?p=legal">Legal issues</a></li>
+	</ul></li>
 
-	<li><a href="?p=tex" id="menu_tex">GregorioTex</a></li>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			if(typeof gregoriotex != 'undefined')
-			{
-			$("#menu_tex").html('<li><ul>\
-					<li><a href="?p=tex_tex">TeX?</a></li>\
-					<li><a href="?p=tex_description">Detailed description</a></li>\
-					<li><a href="?p=tex_examples">Using Gregorio</a></li>\
-					<li><a href="?p=tex_bonus">Bonus features</a></li>\
-				</ul></li>');
-			}
-		});
-	</script>
-	<li><a href="?p=gabc" id="menu_gabc">gabc</a></li>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			if(typeof gabc != 'undefined')
-			{
-			$("#menu_gabc").html('<li><ul>\
-					<li><a href="?p=gabc_basics">Basics</a></li>\
-					<li><a href="?p=gabc_details">Details</a></li>\
-				</ul></li>');
-			}
-		});
-	</script>
-	<li><a href="?p=notation" id="menu_notation">Gregorian notation</a></li>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			if(typeof notation != 'undefined')
-			{
-			$("#menu_notation").html('<li><ul>\
-					<li><a href="?p=notation_structure">Structure</a></li>\
-					<li><a href="?p=notation_alignment">Alignment</a></li>\
-				</ul></li>');
-			}
-		});
-	</script>
+	<li><a href="?p=tex" >GregorioTex</a></li>
+	<li><ul id="submenu_tex">
+		<li><a href="?p=tex_tex">TeX?</a></li>
+		<li><a href="?p=tex_description">Detailed description</a></li>
+		<li><a href="?p=tex_examples">Using Gregorio</a></li>
+		<li><a href="?p=tex_bonus">Bonus features</a></li>
+	</ul></li>
+
+	<li><a href="?p=gabc" >gabc</a></li>
+	<li><ul id="submenu_gabc">
+		<li><a href="?p=gabc_basics">Basics</a></li>
+		<li><a href="?p=gabc_details">Details</a></li>
+	</ul></li>
+
+	<li><a href="?p=notation" >Gregorian notation</a></li>
+	<li><ul id="submenu_notation">
+		<li><a href="?p=notation_structure">Structure</a></li>
+		<li><a href="?p=notation_alignment">Alignment</a></li>
+	</ul></li>
 	<li><a href="?p=contacts">Contact</a></li>
 	<li><a href="?p=links">Links</a></li>
 </ul>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#submenu_gregorio').hide();
+		$('#submenu_tex').hide();
+		$('#submenu_gabc').hide();
+		$('#submenu_notation').hide();
+		
+		if(typeof gregorio != 'undefined') {
+			$('#submenu_gregorio').show();
+		} else if(typeof tex != 'undefined') {
+			$('#submenu_tex').show();
+		} else if(typeof gabc != 'undefined') {
+			$('#submenu_gabc').show();
+		} else if(typeof notation != 'undefined') {
+			$('#submenu_notation').show();
+		}
+	});
+</script>

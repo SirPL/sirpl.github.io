@@ -12,14 +12,14 @@ html {
 }
 
 body {
-	background-image: url("/../img/_body/background.png");
+	background-image: url("../img/_body/background.png");
 	background-repeat: repeat;
 }
 
 body header {
 	height: 90px;
 	width: 100%;
-	background-image: url("/../img/_header/background.png");
+	background-image: url("../img/_header/background.png");
 	background-repeat: repeat-x;
 	border-bottom: 2px solid #A97359;
 }
@@ -100,7 +100,7 @@ section#main a:hover {
 }
 
 section#main ul li {
-	list-style-image: url("/../img/_body/bullet.png");
+	list-style-image: url("../img/_body/bullet.png");
 }
 
 h1, h2, h3, h4, h5 {
